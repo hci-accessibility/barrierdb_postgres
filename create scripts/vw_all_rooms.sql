@@ -10,7 +10,8 @@ CREATE OR REPLACE VIEW all_rooms AS
     r.room_id,
     r.name_normal,
     r.name_formal,
-    r.mapnode_id
+    r.x,
+	r.y
    FROM rooms r
      JOIN maps mp ON r.map_id = mp.map_id
      JOIN buildings b ON mp.building_id = b.building_id;
