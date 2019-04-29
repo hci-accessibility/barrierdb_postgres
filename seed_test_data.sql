@@ -3,7 +3,7 @@ accessibility_constraints, barrier_regions, barrier_type_accessibility_constrain
 RESTART identity;
 
 INSERT INTO buildings (name)
-VALUES ('Outside');
+VALUES ('McBryde Hall');
 
 INSERT INTO maps (name, building_id, mapfile,
 				  transform_scaling, transform_offset, transform_rotation)
@@ -12,7 +12,7 @@ INSERT INTO maps (name, building_id, mapfile,
 INSERT INTO rooms (map_id, name_normal, name_formal, x, y)
 VALUES	(1, 'McBryde NW Door', NULL, 950, 150),
 		(1, 'CS Lounge', 'MCB110', 850, 450),
-		(1, 'McBryde Lecture Hall', 'MCB100', 430, 725),
+		(1, 'McBryde Lecture Hall', 'MCB100', 430, 725);
 
 INSERT INTO accessibility_constraints (name)
 VALUES ('level terrain only'), ('need stable terrain or handholds'), ('need automatic doors');
@@ -24,4 +24,4 @@ INSERT INTO barrier_type_accessibility_constraints (barrier_type_id, access_cons
 VALUES (1, 2),
 	(2, 3), 
 	(3, 1),
-	(4, 1), (4, 2)
+	(4, 1), (4, 2);
