@@ -7,13 +7,12 @@ VALUES ('Outside');
 
 INSERT INTO maps (name, building_id, mapfile,
 				  transform_scaling, transform_offset, transform_rotation)
-	VALUES ('Outside', 1, 'nope.jpg', NULL, NULL, NULL);
+	VALUES ('McBryde_01', 1, 'McBryde_01.jpg', NULL, NULL, NULL);
 
 INSERT INTO rooms (map_id, name_normal, name_formal, x, y)
-VALUES	(1, 'Randolph Loading Dock', NULL, 15, 0),
-		(1, 'Randolph Main Front Door', 'Randolph Main Door', 20, 20),
-		(1, 'Randolph Front-Center Side Door', Null, 15, 20),
-		(1, 'Assistive Wearable Robotics Lab', 'Rm 117A', 15, 10);
+VALUES	(1, 'McBryde NW Door', NULL, 950, 150),
+		(1, 'CS Lounge', 'MCB110', 850, 450),
+		(1, 'McBryde Lecture Hall', 'MCB100', 430, 725),
 
 INSERT INTO accessibility_constraints (name)
 VALUES ('level terrain only'), ('need stable terrain or handholds'), ('need automatic doors');
